@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavireli - Soluciones Modernas para tu Marca</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Nota: No encontré la tipografía "Funnel Display". Usé "Poppins", que es moderna y muy similar en estilo. -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-dark': '#111827',
+                        'brand-gray': '#6B7280',
+                        'brand-accent': '#F59E0B', // Un amarillo/naranja vibrante
+                        'brand-light-gray': '#F9FAFB',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .hero-image-container {
+            background: #F3F4F6;
+        }
+    </style>
+</head>
+<body class="bg-white text-brand-dark font-sans">
+
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-5">
+            <div class="flex justify-between items-center">
+                <img src="http://gavireli.com/wp-content/uploads/2021/09/gavireli_webnueva.png" alt="Gavireli" width="130" height="auto" >
+                <nav class="hidden md:flex space-x-10 items-center font-medium text-brand-gray">
+                    <a href="#soluciones" class="hover:text-brand-dark transition">Soluciones</a>
+                    <a href="#proceso" class="hover:text-brand-dark transition">Proceso</a>
+                    <a href="#nosotros" class="hover:text-brand-dark transition">Nosotros</a>
+                </nav>
+                <a href="#contacto" class="hidden md:block bg-brand-dark text-white px-6 py-2 rounded-lg font-semibold hover:bg-black cta-button">Contactar</a>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-brand-dark focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 border-t">
+            <a href="#soluciones" class="block px-6 py-2 text-brand-gray hover:text-brand-dark">Soluciones</a>
+            <a href="#proceso" class="block px-6 py-2 text-brand-gray hover:text-brand-dark">Proceso</a>
+            <a href="#nosotros" class="block px-6 py-2 text-brand-gray hover:text-brand-dark">Nosotros</a>
+            <a href="#contacto" class="block mx-6 my-2 bg-brand-dark text-white text-center px-5 py-2 rounded-lg font-semibold">Contactar</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="py-20 md:py-24">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <span class="font-semibold text-brand-accent bg-yellow-100 px-3 py-1 rounded-full">Soluciones Creativas</span>
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-brand-dark mt-4 mb-6 leading-tight">Llevamos tu Marca al Siguiente Nivel</h1>
+                    <p class="text-lg md:text-xl text-brand-gray max-w-lg mx-auto md:mx-0 mb-8">Estrategias digitales y operativas que conectan con tu audiencia e impulsan el crecimiento de tu negocio.</p>
+                    <a href="#contacto" class="bg-brand-dark text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-black cta-button inline-block">Empezar Ahora</a>
+                </div>
+                <div class="hero-image-container rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="https://cdn.connectif.cloud/eu6/636cf009f08c1d890effd8cd/images/originals/ac641388-9fb6-4f85-97bc-11470d5f2066-pop-up_770x449px_MUNICH.png" alt="Zapatilla deportiva moderna sobre un fondo oscuro" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Soluciones / Services Section -->
+        <section id="soluciones" class="py-20 md:py-28 bg-brand-light-gray">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">Un Ecosistema de Servicios para tu Éxito</h2>
+                    <p class="mt-4 text-lg max-w-2xl mx-auto text-brand-gray">Soluciones integrales para que solo te preocupes por lo que más importa: crecer.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                         <div class="bg-yellow-100 text-brand-accent p-3 rounded-lg inline-block mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-2">Estrategia Digital</h3>
+                        <p class="text-brand-gray">Desarrollamos planes de marketing y presencia online que capturan la atención y generan resultados medibles.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                        <div class="bg-yellow-100 text-brand-accent p-3 rounded-lg inline-block mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l-4 4-4-4 4-4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-2">Optimización de Procesos</h3>
+                        <p class="text-brand-gray">Analizamos y mejoramos tus flujos de trabajo internos para aumentar la eficiencia y reducir costos operativos.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                        <div class="bg-yellow-100 text-brand-accent p-3 rounded-lg inline-block mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-2">Soporte y Fidelización</h3>
+                        <p class="text-brand-gray">Gestionamos la relación con tus clientes, asegurando una experiencia excepcional que construye lealtad a largo plazo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proceso Section -->
+        <section id="proceso" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                     <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">Nuestro Método: Claro y Colaborativo</h2>
+                </div>
+                 <div class="grid md:grid-cols-3 gap-10 text-center">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 flex items-center justify-center bg-brand-light-gray rounded-xl text-brand-dark text-2xl font-bold mb-4">1</div>
+                        <h3 class="text-lg font-semibold text-brand-dark">Descubrimiento</h3>
+                        <p class="text-brand-gray mt-1">Nos sumergimos en tu negocio para entender tus metas y desafíos.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 flex items-center justify-center bg-brand-light-gray rounded-xl text-brand-dark text-2xl font-bold mb-4">2</div>
+                        <h3 class="text-lg font-semibold text-brand-dark">Estrategia</h3>
+                        <p class="text-brand-gray mt-1">Creamos un plan de acción a medida, enfocado en tus objetivos.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 flex items-center justify-center bg-brand-light-gray rounded-xl text-brand-dark text-2xl font-bold mb-4">3</div>
+                        <h3 class="text-lg font-semibold text-brand-dark">Ejecución y Crecimiento</h3>
+                        <p class="text-brand-gray mt-1">Implementamos, medimos y optimizamos para un impacto continuo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section id="nosotros" class="py-20 md:py-28 bg-brand-dark text-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto text-center">
+                     <img src="https://placehold.co/100x100/F59E0B/111827?text=CF" alt="Foto de Carlos Fernández" class="w-24 h-24 rounded-full mx-auto mb-6 border-4 border-gray-700">
+                    <p class="text-2xl font-medium italic text-gray-200">"Su enfoque estratégico transformó nuestra presencia digital. Se sienten como parte de nuestro equipo, no como una agencia externa. Los resultados hablan por sí solos."</p>
+                    <div class="mt-6">
+                        <p class="font-bold text-white text-lg">Carlos Fernández</p>
+                        <p class="text-brand-accent">CEO, Innovate Inc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto / CTA Section -->
+        <section id="contacto" class="py-20 md:py-28 bg-brand-light-gray">
+            <div class="container mx-auto px-6">
+                <div class="bg-white rounded-2xl shadow-xl p-10 md:p-16 text-center">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark mb-4">¿Hablamos de tu próximo proyecto?</h2>
+                    <p class="text-brand-gray text-lg max-w-2xl mx-auto mb-8">Una conversación puede ser el primer paso para transformar tu negocio. Contáctanos sin compromiso.</p>
+                    <a href="mailto:contacto@gavireli.com" class="bg-brand-dark text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-black cta-button inline-block">Enviar un Mensaje</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-brand-dark">
+        <div class="container mx-auto px-6 py-12 border-t">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold">GAVIRELÍ</h3>
+                    <p class="mt-2 text-brand-gray">Impulsando marcas hacia el futuro.</p>
+                </div>
+                <div class="mt-6 md:mt-0">
+                     <p class="text-brand-gray text-sm">&copy; 2024 Gavireli. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
+
